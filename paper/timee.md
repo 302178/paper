@@ -1,3 +1,20 @@
+### 2025-02-11
+
+* [Decentralizing Trust: Consortium Blockchains and Hyperledger Fabric Explained](https://arxiv.org/abs/2502.06540)
+* [Fine-tuning Multimodal Transformers on Edge: A Parallel Split Learning Approach](https://arxiv.org/abs/2502.06355)
+* [Data-aware Dynamic Execution of Irregular Workloads on Heterogeneous Systems](https://arxiv.org/abs/2502.06304)
+* [Amnesiac Flooding: Easy to break, hard to escape](https://arxiv.org/abs/2502.06001)
+* [Intent-based System Design and Operation](https://arxiv.org/abs/2502.05984)
+* [Byzantine Stable Matching](https://arxiv.org/abs/2502.05889)
+* [Towards Round-Optimal Approximate Agreement on Trees](https://arxiv.org/abs/2502.05591)
+* [Optimizing Fine-Grained Parallelism Through Dynamic Load Balancing on Multi-Socket Many-Core Systems](https://arxiv.org/abs/2502.05293)
+* [The Smart Contract Model](https://arxiv.org/abs/2502.05280)
+* [Teaching An Old Dog New Tricks: Porting Legacy Code to Heterogeneous Compute Architectures With Automated Code Translation](https://arxiv.org/abs/2502.05279)
+* [Distributed Constraint-Coupled Optimization: Harnessing ADMM-consensus for robustness](https://arxiv.org/abs/2502.06763)
+* [MoETuner: Optimized Mixture of Expert Serving with Balanced Expert Placement and Token Routing](https://arxiv.org/abs/2502.06643)
+* [fMoE: Fine-Grained Expert Offloading for Large Mixture-of-Experts Serving](https://arxiv.org/abs/2502.05370)
+* [ITBench: Evaluating AI Agents across Diverse Real-World IT Automation Tasks](https://arxiv.org/abs/2502.05352)
+
 ### 2025-02-10
 
 * [EcoServe: Designing Carbon-Aware AI Inference Systems](https://arxiv.org/abs/2502.05043)
