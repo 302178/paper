@@ -8,15 +8,7 @@ import pytz
 import os
 from dotenv import load_dotenv
 
-# 从 .env 文件加载配置
-load_dotenv()
 
-# GitHub 配置信息从环境变量获取
-# github_token = os.getenv('GITHUB_TOKEN')  # 不再需要
-# repo_owner = os.getenv('REPO_OWNER')  # 不再需要
-# repo_name = os.getenv('REPO_NAME')  # 不再需要
-# file_path = os.getenv('FILE_PATH')  # 不再需要
-# branch = os.getenv('BRANCH')  # 不再需要
 
 # 本地文件路径
 local_file_path = '../daily-arxiv-llm.md'
@@ -60,7 +52,7 @@ def fetch_papers(date, accept_keywords, reject_keywords):
 
         # 筛选包含接受关键字的论文并排除包含拒绝关键字的论文
         if any(keyword in title.lower() or keyword in abstract.lower() for keyword in accept_keywords):
-            if not any(exclude_keyword in title.lower() or exclude_keyword in abstract.lower() for exclude_keyword in reject_keywords):
+            if not reject_keywords or not any(exclude_keyword in title.lower() or exclude_keyword in abstract.lower() for exclude_keyword in reject_keywords):
                 selected_papers.append(f"* [{title}]({abs_link})")
 
     return selected_papers
