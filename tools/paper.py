@@ -24,10 +24,12 @@ local_file_path = '../daily-arxiv-llm.md'
 # 顶部警告文本
 WARNING_TEXT = "The paper list will be updated automatically, please do not edit.\n\n"
 
-def read_keywords_from_csv(file_path):
+def read_keywords_from_csv(file_name):
     """读取CSV文件中的关键字，每行一个关键字"""
+    file_path = os.path.join(os.path.dirname(__file__), file_name)  # 获取当前脚本目录的文件路径
     with open(file_path, 'r', encoding='utf-8') as file:
         return [line.strip().lower() for line in file.readlines()]
+
 
 def get_paper_info(paper):
     title_tag = paper.find('a', class_='title-link')
