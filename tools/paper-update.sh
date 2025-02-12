@@ -16,11 +16,13 @@ cd "$WORK_DIR" || { echo "Failed to navigate to $WORK_DIR"; exit 1; }
 echo "Current working directory: $(pwd)"
 
 # 如果已经存在 git 仓库，执行 pull 更新
+cd /home/wyf/paper/paper
 echo "Repository found. Pulling latest changes..."
-git pull origin main
+# git pull origin main
+git fetch origin
+git reset --hard origin/main
 
 
-cd paper
 
 # 确保所需的文件存在
 if [ ! -f "$WORK_DIR/paper/$DEST_DIR/keyword-accept.csv" ] || [ ! -f "$WORK_DIR/paper/$DEST_DIR/keyword-reject.csv" ] || [ ! -f "$WORK_DIR/paper/$DEST_DIR/paper.py" ]; then
